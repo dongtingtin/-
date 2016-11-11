@@ -1,12 +1,11 @@
 var num = 1;
-/**
-* [mdn indexof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
+[mdn indexof](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
 
 
 
 var test = "abcdefgf";
 var position = test.indexOf('f'); //查找第一个'f'的位置
-/*console.log(position);
+console.log(position);
 
 console.log(test.lastIndexOf('f'));  //查找最后一个'f'的位置
 
@@ -55,7 +54,7 @@ var test = new Date().getDay();
 console.log(test);
 
 var test = new Date().getFullYear();  //年份
-console.log(test);*/
+console.log(test);
 
 var test = new Date().getHours(); //小时
 console.log(test);
