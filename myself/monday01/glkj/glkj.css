@@ -1,0 +1,228 @@
+*{
+	font-family:微软雅黑;
+	font-size:16px;
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+	}
+.top{
+	border:0px solid red;
+	background-color:#FFF;
+	width:100%;
+	height:80px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	}
+.head{
+	border:0px solid red;
+	width:1400px;
+	height:80px;
+	margin:0 auto;
+	}
+.head li{
+	border:0px solid green;
+	width:230px;
+	height:80px;
+	float:left;
+	font-size:18px;
+	}
+.logo{
+	border:0px solid green;
+	width:230px;
+	height:80px;
+	margin:left;
+	background:url(images/logo.png) no-repeat 5px 10px;
+	}
+.head a{
+	 color:#8c8c8c;
+	 font-size:18px;
+	 text-align:center;
+	 text-decoration:none;
+	 line-height:70px;
+	 margin-left:100px; 
+	}
+.head a:hover{
+	color:#3a8fd0; 
+	}
+.number{
+	color:#3a8fd0;
+	text-align:center;
+	line-height:70px;
+	background:url(images/phone.png) no-repeat 20px 24px;
+	cursor:pointer;  
+	}
+.banner{
+	border:0px solid green;
+	width:1600px;
+	height:600px;
+	margin:0 auto;
+	background-image:url(images/banner1.jpg);
+	background-size:cover;
+	cursor:pointer;
+	margin-top:90px;
+	}
+.content{
+	border:0px solid red;
+	width:100%;
+	height:700px;
+	}
+.nuv{
+	border:0px solid #3a8fd0;
+	width:900px;
+	height:170px;
+	margin:0 auto;
+	padding-left:300px;
+	}
+.nuv li{
+	border:1px solid #3a8fd0;
+	width:280px;
+	height:60px; 
+	float:left;
+	font-size:24px;
+	color:#3a8fd0;
+	text-align:center;
+	line-height:50px;
+	margin-top:100px;  
+	}
+.nuv li:hover{
+	color:#FFF;
+	background-color:#3a8fd0;
+	cursor:pointer;
+	}
+.shop{
+	border:0px solid #3a8fd0;
+	width:900px;
+	height:400px;
+	margin:0 auto;
+	background-image:url(images/geshi.png);
+	background-size:100% 100%;
+	}
+.sdk{
+	border:0px solid red;
+	width:100%;
+	height:300px;
+	background-color:#e5e5e5;
+	}
+.main{
+	border:0px solid red;
+	width:1000px;
+	height:300px;
+	margin:0 auto;
+	line-height:50px;
+	background:url(images/ts_img.jpg) no-repeat;
+	background-position:425px 0px;
+	}
+.main p{
+	font-size:34px;
+	padding-top:50px;
+	}
+.main li{
+	color:#757575;
+	margin-left:10px;
+	}
+.msg{
+	border-bottom:1px solid #CCC;
+	width:967px;
+	height:420px;
+	}
+.manu{
+	border:0px solid red;
+	width:966px;
+	height:150px;
+	font-size:32px;
+	text-align:center;
+	line-height:150px;
+	}
+.photo h1{
+	border:0px solid red;
+	width:320px;
+	height:240px;
+	float:left;
+	color:#FFF; 
+	}
+.xl{
+	background:url(images/img_1.jpg) no-repeat;
+	}
+.sj{
+	background:url(images/img_2.jpg) no-repeat;
+	}
+.more{
+	background:url(images/img_3.jpg) no-repeat;
+	} 
+
+.xl p,.sj p{
+	border:0px solid #666;
+	height:40px;
+	background-color:#666;
+	text-align:center;
+	line-height:40px;
+	margin-top:199px;
+	opacity:0.75;
+	}
+.more p{
+	background-color:#666;
+	opacity:0.75;
+	height:140px;
+	text-align:center;
+	padding-top:100px;
+	
+	}
+.jg{
+	border:0px solid red;
+	width:966px;
+	height:80px;
+	font-size:24px;
+	color:#999;
+	line-height:80px;
+	}
+.money{
+	border:0px solid red;
+	width:700px;
+	height:600px;
+	}
+.money h1{
+	border:0px solid red;
+	width:345px;
+	height:500px;
+	float:left;
+	text-align:center;
+	}
+.year{
+	background:url(images/jg_1.png) no-repeat 35px 20px;
+	}
+.day{
+	background:url(images/jg_2.png) no-repeat 25px 20px;
+	}
+.money h2{
+	border:0px solid red;
+	width:345px;
+	height:100px;
+	float:left;
+	text-align:center;
+	}
+.gn{
+	background:url(images/dz-icon.png) no-repeat 50px 20px;
+	}
+.tel{
+	background:url(images/contact-icon.png) no-repeat 70px 20px;
+	}
+.home{
+	border:0px solid red;
+	width:100%;
+	height:150px;
+	color:#999;
+	font-size:20px;
+	text-align:center;
+	 padding-top:100px; 
+	}
+.lost{
+	border:0px solid red;
+	width:100%;
+	height:100px;
+	color:#FFF;
+	background-color:#333;
+	font-size:14px;
+	text-align:center;
+	padding-top:50px; 
+	}	

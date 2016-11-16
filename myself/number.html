@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        table {
+            border: 1px solid palevioletred;
+            width: 450px;
+            height: 500px;
+            margin: 50px auto;
+            background: palevioletred;
+            border-radius: 10px;
+        }
+        
+        td {
+            border: 1px solid #fff;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background-color: hotpink;
+            color: #fff;
+            font-size: 24px;
+            border-radius: 40px;
+        }
+        
+        .img01:hover {
+            background-image: url(001.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img02:hover {
+            background-image: url(002.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img03:hover {
+            background-image: url(003.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img04:hover {
+            background-image: url(004.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img05:hover {
+            background-image: url(05.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img06:hover {
+            background-image: url(006.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img07:hover {
+            background-image: url(007.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img08:hover {
+            background-image: url(008.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img09:hover {
+            background-image: url(09.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img10:hover {
+            background-image: url(10.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img11:hover {
+            background-image: url(011.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        .img12:hover {
+            background-image: url(012.jpg);
+            background-size: cover;
+            transition-timing-function: linear;
+            transition-duration: 3s;
+            transition-property: all;
+            animation-iteration-count: infinite;
+            transform: rotate(360deg);
+        }
+        
+        div {
+            border: 1px solid deepskyblue;
+            width: 450px;
+            height: 60px;
+            margin: 30px auto;
+            font-size: 24px;
+            background-color: lightseagreen;
+            color: #fff;
+            border-radius: 20px;
+        }
+        
+        h3 {
+            border: 1px solid deepskyblue;
+            width: 200px;
+            height: 30px;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+            font-family: "仿宋";
+            font-size: 24px;
+            background-color: yellowgreen;
+            color: #fff;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+    window.onload=function(){
+        //1、创建一个数组，放置问候语
+        var arr=[
+        "世上找不出两个完全相同的人。生得再平凡，也是限量版。",
+        "成长就是将你哭声调成静音的过程。",
+        "不管天气怎样，给自己的世界一片晴朗。",
+        "生活并不完美，但并不代表它不美。",
+        "做好眼前事；珍惜身边人；走好脚下路。",
+        "什么都可以舍弃，但不可舍弃快乐；什么都可以输掉，但不可输掉微笑。",
+        "这一生有很多遗憾，但好在，也有很多美好，所有你值得的东西，在路上，别急。",
+        "再烦，也别忘微笑；再急，也要注意语气；再苦，也别忘坚持；再累，也要爱自己。",
+        "人生是场荒芜的旅行，冷暖自知，苦乐在心。",
+        "现在事，现在心，随缘即可；未来事，未来心，何须劳心。",
+        "除了生死都是小事，别为难自己。",
+        "美好的，留在心底；遗憾的，随风散去。活在当下，且行且珍惜。"];
+        //2、获取页面中放置问候语的元素
+        var p=document.getElementById('text');
+        //3、获取所有的td元素
+        var td=document.getElementsByTagName('td');
+        //alert(td.lenth);
+        //4、给每个td绑定点击事件（闭包函数的写法）
+        for (var i = 0; i < td.length; i++) {
+            (function(i){
+                td[i].onclick=function(){
+                    p.innerHTML=arr[i];
+                };
+            })(i);
+        };
+        } ; 
+    </script>
+    <h3>月份问候语</h3>
+    <table>
+        <tr>
+            <td class="img01">January</td>
+            <td class="img02">February</td>
+            <td class="img03">March</td>
+        </tr>
+        <tr>
+            <td class="img04">April</td>
+            <td class="img05">May</td>
+            <td class="img06">June</td>
+        </tr>
+        <tr>
+            <td class="img07">July</td>
+            <td class="img08">August </td>
+            <td class="img09">September</td>
+        </tr>
+        <tr>
+            <td class="img10">October</td>
+            <td class="img11">November</td>
+            <td class="img12">December</td>
+        </tr>
+    </table>
+    <div>
+        <p id="text">世上找不出两个完全相同的人。生得再平凡，也是限量版。</p>
+    </div>
+</body>
+
+</html>
