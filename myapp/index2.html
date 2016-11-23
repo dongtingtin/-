@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>jquery如何实现背景的淡入淡出效果</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <style>
+        #Thumb img {
+            width: 65px;
+        }
+        
+        #Thumb img.hover {
+            opacity: 0.5;
+            filter: alpha(opacity=50)
+        }
+        
+        .nav {
+            border: 1px solid #66CCFF;
+            padding: 1px;
+            width: 325px;
+            height: 590px;
+        }
+        
+        .imgs {
+            position: relative;
+            width: 325px;
+            height: 485px;
+        }
+        
+        .imgs img {
+            width: 325px;
+            height: 485px;
+        }
+        
+        .imgs span {
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            height: 28px;
+            line-height: 28px;
+            width: 325px;
+            font-size: 12px;
+            background: #000;
+            color: #FFF;
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+            text-align: center;
+        }
+        
+        #Thumb {
+            padding: 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="imgs">
+            <img src="" id="xImage">
+            <span id="xDes"></span>
+        </div>
+        <div id="Thumb">
+            <img src="http://i.baidu.com/yule/r/image/2008-09-27/46348e638ede50ab6104dfe0eedcf7fd.jpg" id="xImage_1">
+            <input id="xDes_1" type="hidden" value="描术文字一">
+            <img src="http://www.xiannv.com/upimg/mingxing/1009/02/2/1%20(12).jpg" id="xImage_2">
+            <input id="xDes_2" type="hidden" value="桂纶镁">
+            <img src="http://www.xiannv.com/upimg/mingxing/1007/09/1/1%20(8).jpg" id="xImage_3">
+            <input id="xDes_3" type="hidden" value="陈意涵">
+            <img src="http://www.shcaoan.com/wy/UploadFiles_5679/200906/2009060322063535.jpg" id="xImage_4">
+            <input id="xDes_4" type="hidden" value="郭书瑶">
+        </div>
+    </div>
+    <script type="text/javascript">
+$("img[id^='xImage_']").click(
+        function () {
+                var id = $(this).attr("id").split('_');
+                var imageSrc = $(this).attr("src");
+                $("#xImage").fadeTo('slow', 0.01, function() {
+                        $("#xImage").attr("src", imageSrc);
+                        $("#xDes").text($("#xDes_" + id[1]).val());
+                        $(this).fadeTo('slow', 1);
+                    });                
+        });
+        $("#xImage").attr("src", $("#xImage_1").attr("src"));
+        $("#xDes").text($("#xDes_1").val());
+        $(function(){
+                var tab=$('div#Thumb>img');
+                tab.click(function(){
+                        $(this).addClass('hover').siblings().removeClass('hover');
+                });
+        })
+</script>
+</body>
+
+</html>

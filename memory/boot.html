@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maxmun-scale=1,minmun-scale=1,user-scalable=no">
+    <!--user-scalable=no 允不允许用户进行手动放大或缩小
+    maxmun-scale=1 放大比例为1:1
+    minmun-scale=1 缩小比例为1:1-->
+    <title>boot.html</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-inverse {
+            border-radius: 0px;
+        }
+        
+        .col-md-3 {
+            border: 1px solid #ccc;
+            height: 370px;
+            width: 22%;
+            min-width: 300px;
+            padding: 5px;
+            text-align: center;
+            margin: 3px;
+            min-width: 22%;
+            margin-top: 30px;
+        }
+        
+        .col-md-3 img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navul">
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a href="" class="navbar-brand hidden-md">bootstrap中文网</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navul">
+                <ul class="nav navbar-nav">
+                    <li><a href="">bootstrap2中文文档</a></li>
+                    <li><a href="">bootstrap3中文文档</a></li>
+                    <li><a href="">bootstrap4.0预览</a></li>
+                    <li><a href="">less教程</a></li>
+                    <li><a href="">jQuery API</a></li>
+                    <li><a href="">网站实例</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/codeguide.png" alt="">
+                <h3><a href="#">Bootstrap 编码规范</a></h3>
+                <h5>by @mdo</h5>
+                <h4>Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/jqueryapi.png" alt="">
+                <h3><a href="#">jQuery API</a></h3>
+                <h5>中文手册</h5>
+                <h4>根据最新的 jQuery 1.11.x 和 2.1.x 版本翻译的 jQuery API 中文文档/手册。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/w3schools.png" alt="">
+                <h3><a href="#">w3schools</a></h3>
+                <h5>原版国内镜像</h5>
+                <h4>w3schools.com 是最受欢迎的前端技术教程网站，但是国内用户一直不能访问，并且国内的中文翻译版本十分陈旧。因此做了个镜像，希望英文好的同学直接去看原版教程吧！</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/expo.png" alt="">
+                <h3><a href="#">优站精选</a></h3>
+                <h5>Bootstrap网站实例</h5>
+                <h4>Bootstrap优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/gulpjs.png" alt="">
+                <h3>
+                    <a href="#">gulp.js </a>
+                </h3>
+                <h5>基于流的自动化构建工具。</h5>
+                <h4>gulp.js - 基于流(stream)的自动化构建工具。Grunt 采用配置文件的方式执行任务，而 Gulp 一切都通过代码实现。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/lesscss.png" alt="">
+                <h3><a href="#">LESS </a></h3>
+                <h5> 一种动态样式语言</h5>
+                <h4>LESS为CSS赋予了动态语言的特性，如变量、继承、运算、函数。LESS既可以在客户端上运行 (支持IE 6+、Webkit、Firefox)，也可以借助Node.js或者Rhino在服务端运行。 </h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/lodash.png" alt="">
+                <h3><a href="#"> Lodash</a></h3>
+                <h5>JavaScript 工具库 </h5>
+                <h4>Lodash 是一个具有一致接口、模块化、高性能等特性的 JavaScript 工具库。比相同功能的 Underscore.js 使用更广泛。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/opencdn.png" alt="">
+                <h3><a href="#">Open CDN </a></h3>
+                <h5>开放CDN服务 </h5>
+                <h4>Bootstrap中文网联合又拍云存储共同推出了开放CDN服务，我们对广泛的前端开源库提供了稳定的存储和带宽的支持，例如Bootstrap、jQuery等。 </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/underscore.png" alt="">
+                <h3>
+                    <a href="#">Underscore.js</a>
+                </h3>
+                <h5>JavaScript 工具库</h5>
+                <h4>Underscore.js是一个 JavaScript 工具库，它提供了一整套函数式编程的实用功能，弥补了 jQuery 没有实现的功能，同时又是 Backbone 必不可少的部分。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/buttons.png" alt="">
+                <h3>
+                    <a href="#">Buttons</a>
+                </h3>
+                <h5>CSS按钮样式库</h5>
+                <h4>Buttons 是一个基于 Sass 和 Compass 构建的CSS按钮（button）样式库，图标采用的是Font Awesome，可以和Bootstrap融合使用。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/stickup.png" alt="">
+                <h3>
+                    <a href="#">stickUp</a>
+                </h3>
+                <h5>让页面元素“固定”位置</h5>
+                <h4>stickUp能让页面目标元素“固定”在浏览器窗口的顶部，即便页面在滚动，目标元素仍然能出现在设定的位置。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/responsive-nav.js.png" alt="">
+                <h3>
+                    <a href="#">Responsive Nav</a>
+                </h3>
+                <h5>响应式导航</h5>
+                <h4>响应式导航（Responsive Nav）是一个很小的JS插件，压缩之后仅有1.7KB，能帮你创建针对小屏幕的可切换式导航</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/unslider.png" alt="">
+                <h3>
+                    <a href="#">Unslider</a>
+                </h3>
+                <h5>jQuery轮播插件</h5>
+                <h4>Unslider — 一个超小的 jQuery 轮播（slider） 插件。支持主流浏览器、键盘导航、自动调整高度和响应式布局。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/flat-ui.png" alt="">
+                <h3>
+                    <a href="#">Flat UI</a>
+                </h3>
+                <h5>Metro风格的Bootstrap</h5>
+                <h4>Flat UI是基于Bootstrap做的Metro化改造，由Designmodo提供。Flat UI包含了很多Bootstrap提供的组件，但是外观更加漂亮。在此强烈推荐！</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/layoutit.png" alt="">
+                <h3>
+                    <a href="#">LayoutIt!</a>
+                </h3>
+                <h5>Bootstrap可视化布局</h5>
+                <h4>LayoutIt! 可拖放排序在线编辑的Bootstrap可视化布局系统。由4wer同学汉化整理。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/bootstrap-switch.png" alt="">
+                <h3>
+                    <a href="#">Bootstrap Switch</a>
+                </h3>
+                <h5>Bootstrap开关组件</h5>
+                <h4>Bootstrap Switch是对Bootstrap控件的扩充。基于选HTML中基本的选择框控件实现只有开和关两种状态的单选按钮。</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/sco.js.png" alt="">
+                <h3>
+                    <a href="#">Sco.js</a>
+                </h3>
+                <h5>Bootstrap组件增强版</h5>
+                <h4>由于大部分的Bootstrap js插件是无法扩展的，因此才有了sco.js，它是对Bootsrap中js插件的增强实现。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/icheck.png" alt="">
+                <h3>
+                    <a href="#">iCheck</a>
+                </h3>
+                <h5>增强复选框和单选按钮</h5>
+                <h4>iCheck让不同浏览器下的复选框（checkboxes）和单选按钮（radio button）更美观、功能更强。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/bootstrap-wysiwyg.png" alt="">
+                <h3>
+                    <a href="#">bootstrap-wysiwyg</a>
+                </h3>
+                <h5>为Bootstrap定制的可视编辑器</h5>
+                <h4>bootstrap-wysiwyg是一个jQuery Bootstrap插件（5KB,
+                    < 200 行代码）可以将任何一个DIV转变成一个WYSIWYG富文本编辑器。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/chart.js.png" alt="">
+                <h3>
+                    <a href="#">Chart.js</a>
+                </h3>
+                <h5>精巧的JS图表绘制工具库</h5>
+                <h4>Chart.js是一个简单、面向对象、为设计者和开发者准备的图表绘制工具库。</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/preboot.png" alt="">
+                <h3>
+                    <a href="#">Preboot</a>
+                </h3>
+                <h5>Bootstrap之前世</h5>
+                <h4>Preboot是一组用LESS语法书写的混合（mixin）和变量（variable）的集合，目的是辅助用户书写更优美的CSS。Bootstrap的前身就是Preboot。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/jquery.pin.png" alt="">
+                <h3>
+                    <a href="#">jQuery.Pin</a>
+                </h3>
+                <h5>固定页面元素的jQuery插件</h5>
+                <h4>jQuery.Pin 能将任意页面元素“钉”在某个容器顶部，而且在尺寸小的屏幕上能够自动禁用这种效果。</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/bsie.png" alt="">
+                <h3>
+                    <a href="#">Bsie</a>
+                </h3>
+                <h5>Bootstrap IE6兼容方案</h5>
+                <h4>Bsie弥补了Bootstrap对IE6的不兼容。目前，bsie能在IE6上支持大部分bootstrap的特性，可惜，还有一些实在无法支持...</h4>
+            </div>
+            <div class="col-md-3">
+                <img src="http://static.bootcss.com/www/assets/img/messenger.png" alt="">
+                <h3>
+                    <a href="#">Messenger</a>
+                </h3>
+                <h5>非常酷的弹框(Alert)组件</h5>
+                <h4>Messenger是一个非常酷的弹框(Alert)组件，能够非常好的与Bootstrap融合，当然，单独使用效果也是非常棒。Messenger自带4套皮肤。</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src=" " alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src=" " alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src=" " alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src=" " alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src=" " alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src=" " alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+            <div class="col-md-3">
+                <img src="" alt="">
+                <h3>
+                    <a href="#"></a>
+                </h3>
+                <h5></h5>
+                <h4></h4>
+            </div>
+        </div>
+    </div>
+
+</body>
