@@ -1,0 +1,73 @@
+$backgroundColor:rgb(35,133,161); 
+.navbar-default{
+    border-radius: 0px;
+    background-color: $backgroundColor; 
+    border-color: $backgroundColor; 
+    
+}
+.navbar-brand{
+    padding-top: 5px;
+}
+.navbar-default .navbar-nav>li>a{
+    color:#fff;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color:#fff;
+}
+navbar-header button{
+    color:#fff;
+}
+.navbar-header .navbar-toggle .icon-bar{
+    background-color:#fff;
+}
+
+#home{
+    background: url(../design-agency/assets/img/home.jpg) no-repeat center center; /*Full Witdth background image*/
+    background-size: cover;
+    min-height: 600px;  
+    padding:0;
+    margin-top:-20px;
+         
+}
+#home .overlay{
+    background-color: rgba(35,133,161,0.5);
+    padding-top:90px;
+    min-height: 600px;
+    color: #fff;
+}
+
+#home h1{
+    font-size:100px;
+    padding-top:80px;
+    font-weight: 900;
+    font-family: 'Browallia New';
+}
+.p-cls{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+section{
+    padding-top:80px;
+    padding-bottom: 120px;
+}
+.pad-bottom{
+    padding-top:60px;
+}
+#head-set{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.parallax-like{
+    background: url(../design-agency/assets/img/stats.jpg) no-repeat center center;
+    background-attachment: fixed; 
+    background-size:cover;
+    padding: 0;
+    color: #fff;
+}
+.parallax-like .overlay{
+    background-color:rgba(35,133,161,0.9);
+    min-height: 200px;
+    font-size: 40px;
+    padding-bottom: 60px;
+    padding-top:60px;
+}
