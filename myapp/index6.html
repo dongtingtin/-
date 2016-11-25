@@ -29,29 +29,29 @@
 
 <body>
     <!--导航栏 固定到顶端-->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!--导航头 下面有开关按钮和logo-->
             <div class="navbar-header">
 
                 <!--开关按钮-->
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#navul">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navul">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
 
                 <!--logo元素 内边距清0-->
-                <a href="" class="navbar-brand hidden-md"><img src="./design-agency/assets/img/vivaldi-logo.png" </a>
+                <a href="#" class="navbar-brand"><img src="./design-agency/assets/img/vivaldi-logo.png"></a>
             </div>
 
             <!--折叠菜单-->
             <div class="collapse navbar-collapse navbar-right scroll-me" id="navul">
                 <ul class="nav navbar-nav">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">WORKS</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -72,7 +72,7 @@
     <section id="services">
         <div class="container">
             <div class="row text-center pad-bottom">
-                <div class="col-md-6 col-md-offset-3 col-sm-3">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
                     <h2 id="head-set">OUR SERVICES</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
@@ -107,10 +107,128 @@
     <div class="parallax-like">
         <div class="overlay">
             <div class="container">
-                <div class="row"></div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div>
+                            <strong>1300+</strong>
+                            <p>
+                                Projects
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div>
+                            <strong>100+</strong>
+                            <p>
+                                Locations
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div>
+                            <strong>5000+</strong>
+                            <p>
+                                Employees
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <section id="works">
+        <div class="container">
+            <div class="row text-center pad-bottom">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                    <h2 id="head-set">OUR SERVICES</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
+            </div>
+            <div class="row text-center portfolio-item">
+                <div class="col-md-4 col-sm-4">
+                    <div class="alert alert-info">
+                        <img src="design-agency/assets/img/1.jpg" class="img-responsive" alt>
+                        <h3>Project Title Here</h3>
+                        <h5><a href=""><strong>Click Here</strong></a>to go to the project</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="alert alert-danger">
+                        <img src="design-agency/assets/img/2.jpg" class="img-responsive" alt>
+                        <h3>Project Title Here</h3>
+                        <h5><a href=""><strong>Click Here</strong></a>to go to the project</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="alert alert-success">
+                        <img src="design-agency/assets/img/3.jpg" class="img-responsive" alt>
+                        <h3>Project Title Here</h3>
+                        <h5><a href=""><strong>Click Here</strong></a>to go to the project</h5>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div id="video-sec" class="player mb-YTVPlayer is Muted" data-property="{videoURL:'https://www.youtube.com/watch?v=Ycv5fNd4AeM',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}"
+        style="position:relative;background-image:none;">
+        <div class="overlay" style="position:relative;">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h1>HERE IS BACKGROUND VEDIO</h1>
+                        <h4>This scripts uses plugin <strong>jquery.mb.YTPlayer</strong></h4>
+                        <h4>to play video in background of divs</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-YTVP_wrapper" id="wrapper_mbYTVP_video-sec" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 1; transition-property: opacity; transition-duration: 2000ms;">
+            <iframe id="mbYTP_video-sec" class="playerBox" style="position: absolute; z-index: 0; width: 2124.92px; height: 1019px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -359.5px; margin-left: -245.96px;"
+                frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/Ycv5fNd4AeM?autoplay=0&amp;modestbranding=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=mbYTP_video-sec&amp;origin=*&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;widgetid=1"></iframe>
+        </div>
+    </div>
+    <section id="contact">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                    <h2 id="head-set">OUR LOCATION</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                    </p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-12">
+                    <h3 class="head-set">102, Melborne City,</h3>
+                    <h3 clsass="head-set">United States - 600 - 009 -00.</h3>
+                    <h3 class="head-set"><strong>Email :</strong> info@yourdomain.com</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="design-agency/assets/img/audio.png">
+                </div>
+                <div class="col-md-3">
+                    <img src="design-agency/assets/img/audio.png">
+                </div>
+                <div class="col-md-3">
+                    <img src="design-agency/assets/img/audio.png">
+                </div>
+                <div class="col-md-3">
+                    <img src="design-agency/assets/img/audio.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        © 2015 YourDomain.com |
+        <a href="http://www.designbootstrap.com/" target="_blank">by DesignBootstrap</a>
+    </footer>
 </body>
 
 </html>

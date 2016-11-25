@@ -1,8 +1,6 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "outDir": "dist",
-        "sourceRoot": "src",
         "sourceMap": true,
         "typeRoots": [
             "node_modules/@types"
