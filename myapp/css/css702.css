@@ -1,0 +1,127 @@
+ /*大屏导航*/
+.navbar-default {
+  background-color: #9c1e2e;
+  background-image: url(../index7/img/christmas-bg.png); }
+
+.navbar-fixed-top {
+  border: 0; }
+
+.navbar-brand {
+  padding: 0;
+  max-height: 26px; }
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #fff; }
+
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fff; }
+
+.dropdown-toggle {
+  background-color: #9c1e2e !important; }
+
+.nav-header .navbar-brand img {
+  max-height: 26px;
+  margin-top: 10px;
+   }
+ 
+
+@media only screen and (max-width: 767px) {
+  /*小屏导航*/
+  .navbar-header {
+    background-image: url(../index7/img/christmas-bg.png);
+    background-size: cover; 
+    margin-top: -1px;
+    margin-bottom: -1px;
+    }
+  .navbar-brand > img {
+    max-height: 30px;
+    margin-left: 70px;
+    margin-top: 8px;
+     }
+  .navbar-toggle {
+    padding: 0;
+    margin-left: -57px; }
+  
+  .navbar .denglu{
+    color:#fff;
+    width: 50px;
+    margin-left:-330px;
+} 
+.container-fluid{
+      background-color:#fff;
+      font-size: 13px;
+      padding: 5px;
+  }
+  .navbar-collapse .navbar-nav{
+    margin: 0px -15px;
+  } 
+  .navbar-collapse .navbar-nav>li>a{
+    color:#fff;
+  }
+  .dropdown-menu>li>a {
+    color: #fff;
+    }
+ .navbar .fa-phone {
+  color: #fff;
+  line-height: 0px;
+  }
+  
+  .dropdown a{
+    background-color:#9c1e2e;  
+  }
+  .navbar-nav .open .dropdown-menu{
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+  .navbar-fixed-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse{
+    max-height: 540px;
+  }  
+     }
+ 
+/*尾部*/
+  #weibu{
+    margin-top: 100px;
+  }
+  .container .last>td{
+    padding-left: 10px;
+  }
+  .container .col-md-12{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  } 
+  .container .col-md-12 a{
+    color: green;
+  }
+
+.panel-group{
+    margin-top: 100px;
+}
+.panel-group .panel-heading{
+border-radius:10px;
+background-color:#390c20;
+color: #fff;
+height: 29px;
+}
+/*.panel-default{
+    border-color: #fff;
+    }*/
+    .panel-group .panel .panel-collapse .panel-body{
+    border-top: 0px solid #ddd;
+    color:#a7a7a7; }
+    /*.panel-group .panel .panel-collapse .panel-body>div{
+    padding-bottom: 10px;
+    font-size: 10px;
+}*/
+.panel-heading{
+    width: 100%;
+}
+.panel-title{
+    text-align: left;
+    margin-top: -4px;
+    }
+.panel-body a{
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+

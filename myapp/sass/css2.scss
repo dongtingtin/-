@@ -14,7 +14,7 @@ body{
  
     // 登陆界面
 .login.page{
-    @extend .full-screen;
+    @extend .full-screen;  
     background-image:$loginBackgroundImage;
       -webkit-transition: opacity 2s linear;
   -moz-transition: opacity 2s linear;
