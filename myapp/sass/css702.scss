@@ -1,14 +1,19 @@
+ *{
+   outline: none;
+ }
  /*大屏导航*/
 .navbar-default {
   background-color: #9c1e2e;
-  background-image: url(../index7/img/christmas-bg.png); }
+  background-image: url(../index7/img/christmas-bg.png);
+  }
 
 .navbar-fixed-top {
   border: 0; }
 
 .navbar-brand {
   padding: 0;
-  max-height: 26px; }
+  
+  }
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #fff; }
@@ -31,21 +36,19 @@
     background-image: url(../index7/img/christmas-bg.png);
     background-size: cover; 
     margin-top: -1px;
-    margin-bottom: -1px;
+
     }
   .navbar-brand > img {
     max-height: 30px;
-    margin-left: 70px;
     margin-top: 8px;
      }
   .navbar-toggle {
     padding: 0;
-    margin-left: -57px; }
+  }
   
   .navbar .denglu{
     color:#fff;
     width: 50px;
-    margin-left:-330px;
 } 
 .container-fluid{
       background-color:#fff;
@@ -63,7 +66,6 @@
     }
  .navbar .fa-phone {
   color: #fff;
-  line-height: 0px;
   }
   
   .dropdown a{
@@ -75,7 +77,20 @@
   }
   .navbar-fixed-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse{
     max-height: 540px;
-  }  
+    width: 100%;
+  } 
+   .container-fluid {
+    background-color: #fff;
+    font-size: 12px; 
+    }
+    .container-fluid .href{
+      color: #390c20;
+      text-decoration: none;
+    }
+    .fuji{
+      margin-top: 10px;
+      padding-right: 0px;
+    }
      }
  
 /*尾部*/
@@ -102,26 +117,56 @@ background-color:#390c20;
 color: #fff;
 height: 29px;
 }
-/*.panel-default{
+.panel-default{
     border-color: #fff;
-    }*/
+    border: none;
+    }
     .panel-group .panel .panel-collapse .panel-body{
     border-top: 0px solid #ddd;
     color:#a7a7a7; }
-    /*.panel-group .panel .panel-collapse .panel-body>div{
-    padding-bottom: 10px;
-    font-size: 10px;
-}*/
 .panel-heading{
     width: 100%;
+    box-shadow: none;
 }
 .panel-title{
     text-align: left;
     margin-top: -4px;
     }
-.panel-body a{
-    color: #a7a7a7;
-    text-decoration: none;
+.panel-body a {
+  color: #a7a7a7;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 12px;
+   }
+.panel-body>div{
+  padding-bottom: 10px;
 }
-
-
+.some{
+  border-bottom: 1px solid #390c20;
+  height: 200px;
+}
+.yishu{
+  white-space: nowrap;
+}
+.some .server{
+  background-color: #fff;
+  border: 0;
+}
+.some .tianjia{
+  border: 1px solid red;
+  width: 30px;
+}
+.red-cat{
+  /*border: 1px solid red;*/
+  width: 40px;
+  height: 40px;
+   background-image:url(https://www.pantrysbest.com/assets/shopping-cart20160225-0854bb8e012b239ae0537e49b3141f86.png);
+   background-size: cover;
+}
+.red-cat:hover{
+  background-image: url(https://www.pantrysbest.com/assets/shopping-cart20161122-9a48a06e299406c103293ed2aa174310.png)
+}
+.donghua{
+  margin-top: 80px;
+  margin-left: 10px;
+}

@@ -7,9 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximun-scale=1,minmun-scale=1,user-scalable=no">
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="../dist/index702.js"></script>
+
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="../css/css702.css">
 </head>
@@ -24,7 +22,10 @@
             <div class="collapse navbar-collapse scroll-me">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">当前城市：北京<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="visible-lg">当前城市：北京<b class="caret"></b></span>
+                            <span class="visible-sm visible-md">北京<b class="caret"></b></span>
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a href="#">上海</a></li>
                             <li><a href="#">杭州</a></li>
@@ -63,7 +64,12 @@
                 <ul class="nav navbar-nav navbar-collapse navbar-right">
                     <li><a href="#" class="dropdown-toggle">登录</a></li>
                     <li><a href="#" class="dropdown-toggle">注册</a></li>
-                    <li><a href="#" class="dropdown-toggle"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  购物车</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">
+                            <span class="visible-lg"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  购物车</span>
+                            <span class="visible-sm visible-md"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -76,7 +82,7 @@
         <div class="navbar-header">
 
             <!--开关按钮-->
-            <div class="navbar-toggle navbar-fixed-top" data-toggle="collapse" data-target="#navul">
+            <div class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navul">
                 <p class="denglu">未登录</p>
             </div>
 
@@ -126,180 +132,240 @@
         </div>
         </div>
         <div class="container-fluid">
-            <div class="col-xs-3 text-center">
-                <div><i class="fa fa-home"></i></div>
-                <div>首页</div>
+            <div class="col-xs-2 fuji" style="width:20%">
+                <a href="#" class="href">
+                    <div><i class="fa fa-arrow-left"></i>首页</div>
+                </a>
             </div>
-            <div class="col-xs-3 text-center">
-                <div><i class="fa fa-list-alt"></i></div>
-                <div>产品列表</div>
+            <div class="col-xs-2 fuji" style="width:20% ">
+                <a href="# " class="href ">
+                    <div>蛋糕</div>
+                </a>
             </div>
-            <div class="col-xs-3 text-center">
-                <div><i class="fa fa-user"></i></div>
-                <div>个人中心</div>
+            <div class="col-xs-2 fuji" style="width:20% ">
+                <a href="#" class="href">
+                    <div>纸杯蛋糕</div>
+                </a>
             </div>
-            <div class="col-xs-3 text-center">
-                <div><i class="fa fa-shopping-cart"></i></div>
-                <div>购物车</div>
+            <div class="col-xs-2 fuji" style="width:20% ">
+                <a href="# " class="href ">
+                    <div>迪士尼</div>
+                </a>
+            </div>
+            <div class="col-xs-2 fuji" style="width:20% ">
+                <a href="#" class="href">
+                    <div>更多<i class="fa fa-angle-double-right"></i></div>
+                </a>
             </div>
         </div>
     </nav>
 
 
-    <div class="container">
-        <div class="col-md-2">
-            <div class="panel-group" id="accordion">
-                <!--<div class="panel panel-default">-->
-                <button class="panel-heading">
-                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                     圣诞精选
-                    </h4>
-                </button>
-                <div id="collapseOne" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                        <div><a href="">惊叹雪人蛋糕</a></div>
-                        <div><a href="">惊叹树心蛋糕</a></div>
+    <div class="container hidden-xs">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading guding">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                圣诞精选
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div><a href="">惊叹雪人蛋糕</a></div>
+                                <div><a href="">惊叹树心蛋糕</a></div>
+                            </div>
+                        </div>
                     </div>
-                    <!--</div>-->
-                </div>
-                <!--<div class="panel panel-default">-->
-                <button class="panel-heading">
-                        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-					迪士尼系列
-                        </h4>
-                    </button>
-                <div id="collapseTwo" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <div><a href="">冰雪奇缘套装</a></div>
-                        <div><a href="">冰雪奇缘迷你纸杯蛋糕</a></div>
-                        <div><a href="">冰雪奇缘树心蛋糕</a></div>
-                        <div><a href="">小熊维尼纸杯蛋糕礼盒</a></div>
-                        <div><a href="">疯狂动物城纸杯蛋糕礼盒</a></div>
-                        <div><a href="">冰雪奇缘迷你纸杯蛋糕</a></div>
-                        <div><a href="">爱丽丝梦游仙境纸杯蛋糕</a></div>
-                        <div><a href="">爱丽丝梦游仙境红丝绒</a></div>
-                        <div><a href="">疯狂动物城大地女神蛋糕</a></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                迪士尼系列
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div><a href="">冰雪奇缘套装</a></div>
+                                <div><a href="">冰雪奇缘迷你纸杯蛋糕</a></div>
+                                <div><a href="">冰雪奇缘树心蛋糕</a></div>
+                                <div><a href="">小熊维尼纸杯蛋糕礼盒</a></div>
+                                <div><a href="">疯狂动物城纸杯蛋糕礼盒</a></div>
+                                <div><a href="">冰雪奇缘迷你纸杯蛋糕</a></div>
+                                <div><a href="">爱丽丝梦游仙境纸杯蛋糕</a></div>
+                                <div><a href="">爱丽丝梦游仙境红丝绒</a></div>
+                                <div><a href="">疯狂动物城大地女神蛋糕</a></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!--</div>-->
-                <!--<div class="panel panel-default">-->
-                <button class="panel-heading">
-                        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                            礼盒
-                        </h4>
-                    </button>
-                <div id="collapseThree" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <div><a href="">迷你挞礼盒</a></div>
-                        <div><a href="">迷你纸杯礼盒</a></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                礼盒
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div><a href="">迷你挞礼盒</a></div>
+                                <div><a href="">迷你纸杯礼盒</a></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!--</div>-->
-                <!--<div class="panel panel-default">-->
-                <button class="panel-heading">
-                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                        蛋糕
-                    </h4>
-                </button>
-                <div id="collapseFour" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <div><a href="">沉睡的黑森林</a></div>
-                        <div><a href="">红丝绒圆舞曲蛋糕</a></div>
-                        <div><a href="">树莓红丝绒</a></div>
-                        <div><a href="">海盐焦糖南瓜慕斯</a></div>
-                        <div><a href="">热情百香果蛋糕</a></div>
-                        <div><a href="">大地女神的恩赐</a></div>
-                        <div><a href="">巧克力物语</a></div>
-                        <div><a href="">摩卡裸蛋糕</a></div>
-                        <div><a href="">栗香</a></div>
-                        <div><a href="">柠檬裸蛋糕</a></div>
-                        <div><a href="">大都会红丝绒</a></div>
-                        <div><a href="">淡奶焦糖香蕉蛋糕</a></div>
-                        <div><a href="">原味重乳酪</a></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                蛋糕
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div><a href="">沉睡的黑森林</a></div>
+                                <div><a href="">红丝绒圆舞曲蛋糕</a></div>
+                                <div><a href="">树莓红丝绒</a></div>
+                                <div><a href="">海盐焦糖南瓜慕斯</a></div>
+                                <div><a href="">热情百香果蛋糕</a></div>
+                                <div><a href="">大地女神的恩赐</a></div>
+                                <div><a href="">巧克力物语</a></div>
+                                <div><a href="">摩卡裸蛋糕</a></div>
+                                <div><a href="">栗香</a></div>
+                                <div><a href="">柠檬裸蛋糕</a></div>
+                                <div><a href="">大都会红丝绒</a></div>
+                                <div><a href="">淡奶焦糖香蕉蛋糕</a></div>
+                                <div><a href="">原味重乳酪</a></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!--</div>-->
-                <!--<div class="panel panel-default">-->
-                <button class="panel-heading">
-                        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-					纸杯蛋糕
-                        </h4>
-                    </button>
-                <div id="collapseFive" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <div><a href="">南瓜纸杯蛋糕</a></div>
-                        <div><a href="">百香果巧克力纸杯蛋糕 </a></div>
-                        <div><a href="">蒙布朗栗香</a></div>
-                        <div><a href="">百香果纸杯蛋糕</a></div>
-                        <div><a href="">黑森林</a></div>
-                        <div><a href="">抹茶黑芝麻纸杯蛋糕</a> </div>
-                        <div><a href="">姜饼人纸杯蛋糕</a></div>
-                        <div><a href="">摩卡纸杯蛋糕</a></div>
-                        <div><a href="">薄荷巧克力</a></div>
-                        <div><a href="">苹果</a></div>
-                        <div><a href="">红丝绒</a></div>
-                        <div><a href="">抹茶</a></div>
-                        <div><a href="">巧克力</a></div>
-                        <div><a href="">香蕉</a></div>
-                        <div><a href="">椰子</a></div>
-                        <div><a href="">柠檬</a></div>
-                        <div><a href="">抹茶巧克力</a></div>
-                        <div><a href="">田园</a></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                纸杯蛋糕
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div><a href="">南瓜纸杯蛋糕</a></div>
+                                <div><a href="">百香果巧克力纸杯蛋糕 </a></div>
+                                <div><a href="">蒙布朗栗香</a></div>
+                                <div><a href="">百香果纸杯蛋糕</a></div>
+                                <div><a href="">黑森林</a></div>
+                                <div><a href="">抹茶黑芝麻纸杯蛋糕</a> </div>
+                                <div><a href="">姜饼人纸杯蛋糕</a></div>
+                                <div><a href="">摩卡纸杯蛋糕</a></div>
+                                <div><a href="">薄荷巧克力</a></div>
+                                <div><a href="">苹果</a></div>
+                                <div><a href="">红丝绒</a></div>
+                                <div><a href="">抹茶</a></div>
+                                <div><a href="">巧克力</a></div>
+                                <div><a href="">香蕉</a></div>
+                                <div><a href="">椰子</a></div>
+                                <div><a href="">柠檬</a></div>
+                                <div><a href="">抹茶巧克力</a></div>
+                                <div><a href="">田园</a></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!--</div>-->
-                <!--<div class="panel panel-default">-->
-                <button class="panel-heading">
-                        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-					派
-                        </h4>
-                    </button>
-                <div id="collapseSix" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <div><a href="">南瓜</a></div>
-                        <div><a href="">经典苹果</a></div>
-                        <div><a href="">淡奶香蕉</a></div>
-                        <div><a href="">综合莓果乳酪</a></div>
-                        <div><a href="">法式布丁</a></div>
-                        <div><a href="">丝滑巧克力</a></div>
-                        <div><a href="">椰风密语</a></div>
-                        <div><a href="">蓝莓乳酪</a></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                派
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div><a href="">南瓜</a></div>
+                                <div><a href="">经典苹果</a></div>
+                                <div><a href="">淡奶香蕉</a></div>
+                                <div><a href="">综合莓果乳酪</a></div>
+                                <div><a href="">法式布丁</a></div>
+                                <div><a href="">丝滑巧克力</a></div>
+                                <div><a href="">椰风密语</a></div>
+                                <div><a href="">蓝莓乳酪</a></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!--</div>-->
-                <!--<div class="panel panel-default">-->
-                <button class="panel-heading">
+                    <div class="panel panel-default">
+                        <button class="panel-heading">
                         <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
 					挞
                         </h4>
                     </button>
-                <div id="collapseSeven" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <div><a href="">抹茶樱花挞（4个/组</a>）</div>
-                        <div><a href="">黄桃挞（4个/组）</a></div>
-                        <div><a href="">椰子挞（4个/组）</a></div>
-                        <div><a href="">柠檬蛋白挞（4个/组）</a></div>
-                        <div><a href="">薄荷巧克力挞（4个/组）</a></div>
-                        <div><a href="">南瓜挞（4个/组）</a></div>
+                        <div id="collapseSeven" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div><a href="">抹茶樱花挞（4个/组</a>）</div>
+                                <div><a href="">黄桃挞（4个/组）</a></div>
+                                <div><a href="">椰子挞（4个/组）</a></div>
+                                <div><a href="">柠檬蛋白挞（4个/组）</a></div>
+                                <div><a href="">薄荷巧克力挞（4个/组）</a></div>
+                                <div><a href="">南瓜挞（4个/组）</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                                礼品卡
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                vice lomo.
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!--</div>-->
-                <!--<div class="panel panel-default">-->
-                <button class="panel-heading">
-                        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
-					礼品卡
-                        </h4>
-                    </button>
-                <div id="collapseTen" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                        vice lomo.
+            </div>
+            <div class="col-md-10 col-sm-9 hidden-xs">
+                <div class="panel-group" id="accordion">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#"><img class="img-responsive" src="https://www.pantrysbest.com/system/product_sets/product_category_images/000/000/088/original/%E6%A0%91%E5%BF%83%E5%AE%98%E7%BD%91%E4%BA%A7%E5%93%81%E5%88%97%E8%A1%A8.jpg?1480060698"></a>
+                        </div>
+                        <div class="col-md-9 some">
+                            <div class="col-md-4">
+                                <h3><a href="#">惊叹树心蛋糕</a></h3>
+                                <div>￥269</div>
+                                <div class="yishu">3D艺术，匠心之作，暗藏惊喜，刹那永恒</div>
+                                <div><a href="#">查看详情</a></div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4 donghua">
+                                <button class="server"><img src="https://www.pantrysbest.com/assets/product-set03-00513e3868c07fa187e3ece86b6f82bf.png"></button>
+                                <input class="tianjia" value="0"></input>
+                                <button class="server"><img src="https://www.pantrysbest.com/assets/product-set02-7911e6d209a9ced7052995ef7c9d99dc.png"></button>
+                                <div class="red-cat"></div>
+                                <p>加入购物车</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#"><img class="img-responsive" src="https://www.pantrysbest.com/system/product_sets/product_category_images/000/000/087/original/%E7%BA%A2%E5%8A%A0%E4%BB%91%E9%9B%AA%E4%BA%BA-%E9%A6%96%E9%A1%B5%E4%BA%A7%E5%93%81%E5%88%97%E8%A1%A8.jpg?1481020902"></a>
+                        </div>
+                        <div class="col-md-9 some">
+                            <div class="col-md-4">
+                                <h3><a href="#">惊叹树心蛋糕</a></h3>
+                                <div>￥269</div>
+                                <div class="yishu">3D艺术，匠心之作，暗藏惊喜，刹那永恒</div>
+                                <div><a href="#">查看详情</a></div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4 donghua">
+                                <button class="server"><img src="https://www.pantrysbest.com/assets/product-set03-00513e3868c07fa187e3ece86b6f82bf.png"></button>
+                                <input class="tianjia" value="0"></input>
+                                <button class="server"><img src="https://www.pantrysbest.com/assets/product-set02-7911e6d209a9ced7052995ef7c9d99dc.png"></button>
+                                <div class="red-cat"></div>
+                                <p>加入购物车</p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!--</div>-->
+
             </div>
         </div>
-        <div class="col-md-10"></div>
     </div>
 
 
@@ -307,6 +373,13 @@
 
 
     <div class="footer">
+
+
+
+
+
+
+
         <!--大屏尾部-->
         <div class="container text-center hidden-xs" id="vivi">
             <div class="row">
@@ -344,6 +417,8 @@
 
 
 
-</body>
+</body> <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="../dist/index702.js"></script>
 
 </html>

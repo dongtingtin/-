@@ -7,5 +7,4 @@ $('.collapse').on('show.bs.collapse', function () {
 });
 $('.collapse').on('hide.bs.collapse', function () {
     $(this).parent().find('.panel-heading').css('background', '#390c20');
-});
-//# sourceMappingURL=index702.js.map
+})
