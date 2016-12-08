@@ -24,7 +24,8 @@
   line-height: 0px; }
 
 .dropdown-toggle {
-  background-color: #9c1e2e !important; }
+  background-color: #9c1e2e !important;
+  background-image: url(https://www.pantrysbest.com/assets/christmas-bg-06297b0446b04a61a5a68a6e3f13b7cb.png); }
 
 .nav-header .navbar-brand img {
   max-height: 26px;
@@ -57,7 +58,8 @@
   .dropdown-menu > li > a {
     color: #fff; }
   .dropdown a {
-    background-color: #9c1e2e; }
+    background-color: #9c1e2e;
+    background-image: url(https://www.pantrysbest.com/assets/christmas-bg-06297b0446b04a61a5a68a6e3f13b7cb.png); }
   .navbar-nav .open .dropdown-menu {
     margin-top: -5px;
     margin-bottom: -5px; }

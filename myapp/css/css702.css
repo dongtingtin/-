@@ -20,7 +20,8 @@
   color: #fff; }
 
 .dropdown-toggle {
-  background-color: #9c1e2e !important; }
+  background-color: #9c1e2e !important;
+  background-image: url(https://www.pantrysbest.com/assets/christmas-bg-06297b0446b04a61a5a68a6e3f13b7cb.png); }
 
 .nav-header .navbar-brand img {
   max-height: 26px;
@@ -53,7 +54,8 @@
   .navbar .fa-phone {
     color: #fff; }
   .dropdown a {
-    background-color: #9c1e2e; }
+    background-color: #9c1e2e;
+    background-image: url(https://www.pantrysbest.com/assets/christmas-bg-06297b0446b04a61a5a68a6e3f13b7cb.png); }
   .navbar-nav .open .dropdown-menu {
     margin-top: -5px;
     margin-bottom: -5px; }
@@ -68,7 +70,10 @@
     text-decoration: none; }
   .fuji {
     margin-top: 10px;
-    padding-right: 0px; } }
+    padding-right: 0px; }
+  .textcolor1 {
+    color: #390C20;
+    margin-top: -7px; } }
 
 /*尾部*/
 #weibu {
@@ -125,18 +130,37 @@
 .yishu {
   white-space: nowrap; }
 
-.some .server {
+.photo {
+  border-radius: 10px; }
+
+/*减号*/
+.some .server1 {
+  width: 40px;
+  height: 40px;
+  background-image: url(https://www.pantrysbest.com/assets/product-set03-00513e3868c07fa187e3ece86b6f82bf.png);
+  background-size: cover;
+  background-color: #fff;
+  border: 0; }
+
+/*加号*/
+.some .server2 {
+  width: 40px;
+  height: 40px;
+  background-image: url(https://www.pantrysbest.com/assets/product-set02-7911e6d209a9ced7052995ef7c9d99dc.png);
+  background-size: cover;
   background-color: #fff;
   border: 0; }
 
 .some .tianjia {
-  border: 1px solid red;
-  width: 30px; }
+  border: 1px solid #fff;
+  width: 30px;
+  padding-top: 30px; }
 
+/*购物车*/
 .red-cat {
   /*border: 1px solid red;*/
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-image: url(https://www.pantrysbest.com/assets/shopping-cart20160225-0854bb8e012b239ae0537e49b3141f86.png);
   background-size: cover; }
 
@@ -144,5 +168,4 @@
   background-image: url(https://www.pantrysbest.com/assets/shopping-cart20161122-9a48a06e299406c103293ed2aa174310.png); }
 
 .donghua {
-  margin-top: 80px;
-  margin-left: 10px; }
+  margin-top: 100px; }
