@@ -1,0 +1,18 @@
+
+    .navbar-default{
+        background:url(https://www.pantrysbest.com/assets/christmas-bg-06297b0446b04a61a5a68a6e3f13b7cb.png);
+        background-size: cover;
+        background-color: #9c1e2e;
+        }
+
+.navbar-brand>img{
+max-height: 28px;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover{
+    color:#fff;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
+    background-color: #9c1e2e;
+    color: #fff;
+}
