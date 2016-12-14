@@ -1,0 +1,40 @@
+<ion-view hide-nav-bar="true" id="signin">
+    <ion-content style="background:url('../img/U5IGX5W0246J.jpg');">
+        <div class="row">
+            <div class="col-offset-25 col-25" style="margin-top:50px;margin-left:100px;">
+                <img src="../img/img-a5cfb61f4eb8b250d574e91cca8b53a9.jpg" alt="" style="display:block;width:100%;width:150px;height:150px;border-radius:100px;">
+            </div>
+        </div>
+
+        <!--登录表单-->
+        <div class="list" style="margin-top:50px;opacity:0.5;">
+            <label class="item item-input">
+          <span class="input-label"><i class="ion-android-phone-portrait"></i></span>
+          <input type="number" ng-model="user.username" ng-blur="checkUsername()">
+        </label>
+            <label class="item item-input">
+          <span class="input-label"><i class="icon ion-locked"> </i></span>
+          <input type="password" ng-model="user.password">
+        </label>
+        </div>
+        <!--错误提示,当输入错误时，显示错误-->
+        <div class="card" ng-show="isError">
+            <div class="item item-text-wrap">
+                {{errorMsg}}
+            </div>
+        </div>
+        <div class="" style="opacity:0.5;">
+            <button class="button button-block full button-balanced" ng-click="login()">登录</button>
+        </div>
+
+        <!--注册 忘记密码-->
+        <div class="row">
+            <div class="col-33 text-center">
+                <button class="button button-clear" style="color:#fff">注册</button>
+            </div>
+            <div class="col-33 col-offset-33 text-center">
+                <button class="button button-clear" style="color:#fff">忘记密码？</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
